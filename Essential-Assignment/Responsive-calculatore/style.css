@@ -1,0 +1,162 @@
+body {
+
+
+    height: 100vh;
+    margin: 2px;
+    padding: auto;
+    background-color: black;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* height: 550px;
+    width: 300px; */
+    border: 2px solid #f65308;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgb(27, 26, 25);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: borderAnimation 2s infinite;
+}
+
+.display {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(243, 235, 229, 0.073);
+    color: white;
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    /* Centers text vertically */
+    justify-content: flex-end;
+    /* Aligns text to the right */
+    font-size: 24px;
+    /* Increased font size */
+    animation: borderAnimation 3s infinite;
+    /* Added animation */
+}
+
+.btn {
+    display: flex;
+    flex-wrap: wrap;
+    /* Wraps keys to the next line */
+    justify-content: space-between;
+    /* Adds space between keys */
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d30f0f;
+    border: 2px solid grey;
+    color: wheat;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    animation: borderAnimation 7s infinite;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+h1,
+p {
+    color: rgb(236, 236, 7);
+    margin: 50px;
+    text-align: center;
+    /* Center the heading */
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: whitesmoke;
+    }
+
+    25% {
+        border-color: rgb(84, 12, 229);
+    }
+
+    50% {
+        border-color: rgb(90, 219, 9);
+    }
+
+    75% {
+        border-color: rgb(239, 109, 109);
+    }
+
+    100% {
+        border-color: rgb(40, 7, 75);
+    }
+}
+
+.container-lg {
+    border: 2px solid wheat;
+
+}
+
+input {
+    border: None;
+    border-radius: 5px;
+    color: red;
+    font-size: 2rem;
+    text-align: center;
+    width: fit-content;
+    height: max-content;
+    margin: 2px;
+    padding: 1px;
+
+}
+
+
+
+.buttons div.col {
+    z-index: -1;
+    display: flex;
+    white-space: 2px;
+    justify-content: center;
+    align-items: center;
+    background-color: #d30f0f;
+    border: 2px solid grey;
+    color: rgb(10, 9, 9);
+    border-radius: 25px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    animation: borderAnimation 3s infinite;
+}
+
+.calculator {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.calculator .form-control {
+    text-align: right;
+    font-size: 1.5rem;
+    height: 3rem;
+}
+
+.calculator .btn {
+    font-size: 1.5rem;
+    height: 3rem;
+}

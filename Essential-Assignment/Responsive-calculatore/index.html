@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="text-center">
+    <br>
+    <h1 id="title">DOM Calculator</h1>
+    <p id="description">Responsive Bootstrap Calcualatore that supports infinix expression</p>
+    <div class="container text-center">
+        <div class="calculator  p-3">
+            <div class="form-group mb-3">
+                <input type="text" id="result" class="form-control display" value="0" readonly>
+            </div>
+            <div class="row g-2 keys">
+                <div class="col-3"><button class="btn" onclick="appendCharacter('7')" id="7">7</button></div>
+                <div class="col-3"><button class="btn" onclick="appendCharacter('8')" id="8">8</button></div>
+                <div class="col-3"><button class="btn" onclick="appendCharacter('9')" id="9">9</button></div>
+                <div class="col-3"><button class="btn btn-danger w-75" onclick="clearDisplay()" id="clear">C</button>
+                </div>
+                <div class="col-3"><button class="btn" onclick="appendCharacter('4')" id="4">4</button></div>
+                <div class="col-3"><button class="btn" onclick="appendCharacter('5')" id="5">5</button></div>
+                <div class="col-3"><button class="btn" onclick="appendCharacter('6')" id="6">6</button></div>
+                <div class="col-3"><button class="btn" onclick="appendCharacter('/')" id="div">/</button></div>
+                <div class="col-3"><button class="btn" onclick="appendCharacter('1')" id="1">1</button></div>
+                <div class="col-3"><button class="btn" onclick="appendCharacter('2')" id="2">2</button></div>
+                <div class="col-3"><button class="btn" onclick="appendCharacter('3')" id="3">3</button></div>
+                <div class="col-3"><button class="btn" onclick="appendCharacter('*')" id="mul">*</button></div>
+                <div class="col-3"><button class="btn" onclick="appendCharacter('0')" id="0">0</button></div>
+                <div class="col-3"><button class="btn" onclick="appendCharacter('.')" id=".">.</button></div>
+                <div class="col-3"><button class="btn" onclick="appendCharacter('-')" id="subtract">-</button></div>
+                <div class="col-3"><button class="btn" onclick="appendCharacter('+')" id="add">+</button></div>
+                <div class="col-12"><button class="btn btn-primary w-100" onclick="calculateResult()"
+                        id="equal">=</button></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
